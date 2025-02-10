@@ -1,0 +1,83 @@
+.header-text {
+    position: absolute;
+    top: 105px;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Press Start 2P';
+    color: #ff5c8a;
+    z-index: 10;
+  }
+body {
+    font-family: 'Press Start 2P';
+    min-height: 90vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 60px;
+    align-items: center;
+    padding-top: 105px;
+    color: #ff5c8a;
+    background-image: url('https://i.pinimg.com/736x/16/66/f4/1666f470888dbeadfc3a0ddf3edfc79d.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+  }
+  #next:hover {
+    background-color: #fe8799;
+  }
+  #prev:hover {
+    background-color: #fe8799;
+  }
+  .slider{
+    position: relative;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+  }
+  .item{
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    text-align: justify;
+    background-color: #fff0f0;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid #ed8da8;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    left: calc(50% - 120px);
+    top: 0;
+  }
+  #prev{
+    position: absolute;
+    top: 40%;
+    background-color: #ffa0af;
+    border: 4px solid #fb778b;
+    color: white;
+    font-size: xx-large;
+    border-radius: 10px;
+    font-weight: bold;
+    left: 50px;
+  }
+  #next{
+    position: absolute;
+    top: 40%;
+    background-color: #ffa0af;
+    border: 4px solid #fb778b;
+    color: white;
+    font-size: xx-large;
+    border-radius: 10px;
+    font-weight: bold;
+    left: 50px;
+    left: unset;
+    right: 50px;
+  }
+  #last{
+    background-color: transparent;
+    border-color: transparent;
+    width: 87%;
+    height: auto;
+    padding: 10px;
+  }

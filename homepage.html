@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>⋆ ˚｡⋆୨♡୧⋆ ˚｡⋆</title>
+</head>
+<body>
+    <div class="header-text">Домашняя страница >ᴗ<</div>
+    <img src="https://i.gifer.com/origin/bb/bbbb2ff22c58d6457e1f082e3880f4dc_w200.gif" id="gif1">
+    <div class="menu">
+        <div class="menu-item">
+          <div class="icon-container">
+            <img src="strawberry.png" onclick="window.location.href='reminderpage.html'" class="icon">
+          </div>
+          <p>помни</p>
+        </div>
+        <div class="menu-item">
+          <div class="icon-container">
+            <img src="camera.png" onclick="window.location.href='picpage.html'" class="icon">
+          </div>
+          <p>галерея</p>
+        </div>
+        <div class="menu-item">
+          <div class="icon-container">
+            <img src="music.png" onclick="window.location.href='https://open.spotify.com/track/4feXcsElKIVsGwkbnTHAfV?si=e52cb48d39ec4ec8'" class="icon">
+          </div>
+          <p>музыка</p>
+        </div>
+        <div class="menu-item">
+          <div class="icon-container">
+            <img src="globe.png" onclick="window.location.href='placespage.html'" class="icon">
+          </div>
+          <p>места</p>
+        </div>
+        <div class="menu-item">
+          <div class="icon-container">
+            <img src="squirrel.png" onclick="window.location.href='hamsterspage.html'" class="icon">
+          </div>
+          <p>белочки</p>
+        </div>
+        <div class="menu-item">
+          <div class="icon-container">
+            <img src="hellokitty.png" onclick="window.location.href='videopage.html'" class="icon">
+          </div>
+          <p>сюрприз</p>
+        </div>
+      </div>
+      <img src="https://i.pinimg.com/originals/c0/52/ed/c052edd02024c5d2d6d9c556ab1ad7c9.gif" id="gif2">
+      <script>
+        window.addEventListener('load', () => {
+          const menuItems = document.querySelectorAll('.menu-item');
+          menuItems.forEach((item, index) => {
+            item.style.animationDelay = `${index * 0.2}s`; 
+          });
+        });
+      </script>
+      
+</body>
+</html>
